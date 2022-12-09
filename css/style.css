@@ -1,0 +1,160 @@
+body{
+	margin:0;
+	padding:0;
+	background-color:#f4f4f4;
+	font-family:sans-serif;
+}
+
+/* START OF NAVBAR */
+.sidebars{
+	height:100vh;	
+
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)), url('../img/etc/cover.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+
+	border-right:1px solid white;
+}
+
+.borders{
+	border-bottom:1px groove #fff;
+}
+
+a{
+	text-decoration:none;
+}
+
+.sidebarlinks{
+	font-size:18px;
+	letter-spacing:1.3px;
+}
+
+ul.sidebarlinks li .active{
+	background-color:red;
+	border-radius:7px;
+
+	transition:all 0.3s;
+}
+
+ul.sidebarlinks li .active:hover{
+	background-color:tomato;
+}
+
+ul.sidebarlinks li .active:hover{
+	transform:translateY(-1px);
+	box-shadow:0px 10px 10px #000;
+}
+
+.noactive{
+	transition:all 0.3s;
+	border-radius:7px;
+}
+
+.noactive:hover{
+	background-color:#555;
+}
+
+.searchinputs{	
+	border:none;
+	border-radius:0;
+	border-bottom:2px solid #fff;	
+	color:#fff;
+}
+
+.searchinputs:focus{
+	border:none;
+	box-shadow:none;
+	border-bottom:2px solid red;
+	color:#fff;
+}
+
+.breadcrumb a{
+	color:#f4f4f4;
+}
+
+.searchbuttons{
+	transition:all 0.3s;
+}
+
+.searchbuttons:hover{
+	transform:translateY(-1px);
+}
+
+.icons{
+	position:relative;
+}
+
+.icons::before{
+	content:'';
+
+	width:10px;
+	height:10px;
+
+	background-color:red;
+	border-radius:50%;
+
+	position:absolute;
+	top:5px;
+	left:23px;
+}
+/* END OF NAVBAR */
+
+/* START OF CARD SECTION */
+.sidetexts{
+	font-size:20px;
+}
+
+.mycards{
+	border-top:1px solid orange;
+	border-left:1px solid orange;
+	box-shadow:0px 4px 10px #888;
+
+	transition:all 0.3s;
+}
+
+.mycards:hover{
+	border:none;
+	border-bottom:1px solid orange;
+	border-right:1px solid orange;
+
+	box-shadow:4px 4px 20px #777;
+}
+/* END OF CARD SECTION */
+
+/* START CONVERSATION RATE AND TASK SECTION */
+.conversations{
+	border-radius:10px;
+	font-variant:small-caps;
+}	
+
+.checkboxes:focus{
+	outline:0;
+	border-color:#000;
+	box-shadow:none;
+}
+
+.checkboxes:checked{
+	border:0;
+	background-color:#0cfa00;
+}
+
+.mycardtasks{
+	border-left:3px outset red;
+	border-radius:0;	
+	margin-bottom:10px;
+}
+/* END CONVERSATION RATE AND TASK SECTION */
+
+@media(max-width:730px){
+	.sidebars{
+		height:auto;
+		position:static;
+
+		margin-top:10px;
+	}
+
+	.topbars{
+		position:static;
+	}
+}
